@@ -52,6 +52,7 @@ class SqsTransportFactoryTest extends TestCase
             'retries' => 5,
             'version' => 'theVersion',
             'lazy' => false,
+            'endpoint' => 'http://localstack:1111',
         ]]);
 
         $this->assertEquals([
@@ -62,6 +63,7 @@ class SqsTransportFactoryTest extends TestCase
             'retries' => 5,
             'version' => 'theVersion',
             'lazy' => false,
+            'endpoint' => 'http://localstack:1111',
         ], $config);
     }
 
